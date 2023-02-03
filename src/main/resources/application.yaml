@@ -1,0 +1,8 @@
+# Storing creds explicitly is a no-go, but that's a test project, so I don't give a sh*t
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 111111
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
