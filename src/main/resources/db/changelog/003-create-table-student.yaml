@@ -9,7 +9,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: bigint
+                  type: serial
                   constraints:
                     primaryKey:  true
                     nullable:  false
@@ -20,3 +20,7 @@ databaseChangeLog:
               - column:
                   name: email
                   type: text
+
+      rollback:
+        - dropTable:
+            tableName: student

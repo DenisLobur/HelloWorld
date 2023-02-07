@@ -1,4 +1,4 @@
-package com.starter.helloworld;
+package com.starter.helloworld.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

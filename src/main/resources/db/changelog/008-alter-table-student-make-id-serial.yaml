@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: denys
+      changes:
+        - addAutoIncrement:
+            tableName: student
+            schemaName: nix
+            columnName: id

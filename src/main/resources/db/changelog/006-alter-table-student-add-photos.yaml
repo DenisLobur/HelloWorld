@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 6
+      author: denys
+      changes:
+        - addColumn:
+            tableName: student
+            schemaName: nix
+            columns:
+            - column:
+                name: photos
+                type: serial

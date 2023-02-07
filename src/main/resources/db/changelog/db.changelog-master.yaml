@@ -11,6 +11,15 @@ databaseChangeLog:
   - include:
       file: 004-create-table-photo.yaml
       relativeToChangelogFile: true
+#  - include:
+#      file: 005-drop-hibernate-sequence.sql
+#      relativeToChangelogFile: true
   - include:
-      file: 005-drop-hibernate-sequence.sql
+      file: 006-alter-table-student-add-photos.yaml
       relativeToChangelogFile: true
+  - include:
+      file: 007-alter-table-photo-add-description.yaml
+      relativeToChangelogFile: true
+#  - include:
+#      file: 008-alter-table-student-make-id-serial.yaml
+#      relativeToChangelogFile: true
