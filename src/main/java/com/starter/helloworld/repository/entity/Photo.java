@@ -19,8 +19,7 @@ public class Photo {
     private String url;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
-    @ToString.Exclude
+    @JoinColumn(name = "student_id", nullable = false)
     private Student student;
 
     @Column

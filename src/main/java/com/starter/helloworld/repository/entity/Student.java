@@ -23,7 +23,6 @@ public class Student {
     @Column
     private String email;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    @ToString.Exclude
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
     private List<Photo> photos;
 }

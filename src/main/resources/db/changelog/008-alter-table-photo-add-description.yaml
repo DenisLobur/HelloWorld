@@ -1,12 +1,12 @@
 databaseChangeLog:
   - changeSet:
-      id: 6
+      id: 8
       author: denys
       changes:
         - addColumn:
-            tableName: student
+            tableName: photo
             schemaName: nix
             columns:
-            - column:
-                name: photos
-                type: serial
+              - column:
+                  name: description
+                  type: text

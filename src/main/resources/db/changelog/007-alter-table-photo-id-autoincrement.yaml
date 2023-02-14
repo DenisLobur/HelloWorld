@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 7
+      author: denys
+      changes:
+        - addAutoIncrement:
+            catalogName: nix
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: nix
+            startWith: 1
+            tableName: photo

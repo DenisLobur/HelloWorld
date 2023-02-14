@@ -15,11 +15,11 @@ databaseChangeLog:
 #      file: 005-drop-hibernate-sequence.sql
 #      relativeToChangelogFile: true
   - include:
-      file: 006-alter-table-student-add-photos.yaml
+      file: 006-alter-table-student-id-autoincrement.yaml
       relativeToChangelogFile: true
   - include:
-      file: 007-alter-table-photo-add-description.yaml
+      file: 007-alter-table-photo-id-autoincrement.yaml
       relativeToChangelogFile: true
-#  - include:
-#      file: 008-alter-table-student-make-id-serial.yaml
-#      relativeToChangelogFile: true
+  - include:
+      file: 008-alter-table-photo-add-description.yaml
+      relativeToChangelogFile: true
