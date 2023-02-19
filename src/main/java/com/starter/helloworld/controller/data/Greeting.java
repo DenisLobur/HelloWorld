@@ -1,4 +1,4 @@
-package com.starter.helloworld.data;
+package com.starter.helloworld.controller.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Greeting {
-    private final long id;
-    private final String content;
+    private long id;
+    private String content;
 }
