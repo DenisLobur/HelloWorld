@@ -1,1 +1,1 @@
-DROP SEQUENCE hibernate_sequence;
+DROP SEQUENCE IF EXISTS nix.hibernate_sequence;

@@ -15,6 +15,9 @@
 	<description>HelloWorld</description>
 	<properties>
 		<java.version>19</java.version>
+		<liquibase-core.version>4.18.0</liquibase-core.version>
+		<postgresql.version>42.5.3</postgresql.version>
+		<lombok.version>1.18.26</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -24,7 +27,7 @@
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-			<version>4.19.0</version>
+			<version>${liquibase-core.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -44,12 +47,13 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
+			<version>${postgresql.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
