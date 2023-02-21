@@ -3,7 +3,6 @@ package com.starter.helloworld.repository.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.List;
 
@@ -11,7 +10,7 @@ import java.util.List;
 @Setter
 @Getter
 @Table(name = "student", schema = "nix")
-public class Student {
+public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
@@ -23,7 +22,6 @@ public class Student {
     @Column
     private String email;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    @ToString.Exclude
-    private List<Photo> photos;
+    @OneToMany(mappedBy = "studentEntity", fetch = FetchType.LAZY)
+    private List<PhotoEntity> photoEntities;
 }

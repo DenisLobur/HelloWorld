@@ -3,13 +3,12 @@ package com.starter.helloworld.repository.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Setter
 @Getter
 @Table(name = "photo", schema = "nix")
-public class Photo {
+public class PhotoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
@@ -19,9 +18,8 @@ public class Photo {
     private String url;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
-    @ToString.Exclude
-    private Student student;
+    @JoinColumn(name = "student_id", nullable = false)
+    private StudentEntity studentEntity;
 
     @Column
     private String description;

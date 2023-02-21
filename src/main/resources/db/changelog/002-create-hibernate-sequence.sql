@@ -1,1 +1,1 @@
-CREATE SEQUENCE if not exists nix.hibernate_sequence START 1;
+CREATE SEQUENCE if not exists hibernate_sequence START 1;

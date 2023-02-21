@@ -9,7 +9,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: serial
+                  type: bigint
                   constraints:
                     primaryKey:  true
                     nullable:  false
@@ -23,4 +23,4 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     foreignKeyName: fk_student_id
-                    references: postgres.nix.student(id)
+                    references: nix.student(id)
